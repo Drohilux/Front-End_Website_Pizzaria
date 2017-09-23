@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Comi & Quero Mais</title>
+
+    <link rel="stylesheet" href="_css/style.css">
+
+    
+</head>
+
+<body>
+
+<header class="bg">
+    <img class="icone" src="_images/logo.png" width="600" alt="">
+</header>
+
+<div class="geral">
+
+    <div class="etapas pizzaria">
+        <h2>A Pizzaria</h2>
+        <p>Fundada ainda na década de 90 e reaberta anos mais tarde a Comi & Quero Mais é a mais antiga pizzaria do bairro.
+            Deste então trazemos para você um pedacinho da Itália perto da sua casa e em um ambiente familiar atendendo a
+            você nosso cliente com muito respeito e carinho.<br>
+            Esperamos você para nos acompanhar pelos próximos 10 anos!</p>
+    </div>
+    <!-- Descrição da Pizzaria -->
+
+    <div class="etapas cardapio">
+        <h2>Nossos Sabores</h2>
+        <div class="sabores">
+            <img src="_images/modelo1.png" alt="">
+            <h3 class="pizza">Portuguesa</h3>
+            <p class="descricao">Molho, muçarela, presunto, calabresa, palmito e ovo.</p>
+            <p class="valor">R$29,00</p>
+            <input type="checkbox" class="botao" value="29.00">
+        </div>
+
+        <div class="sabores">
+            <img src="_images/modelo2.png" alt="">
+            <h3 class="pizza">Pepperoni</h3>
+            <p class="descricao">Molho, muçarela, peperone, tomate, azeitona e orégano.</p>
+            <p class="valor">R$32,00</p>
+            <input type="checkbox" class="botao" value="32.00">
+        </div>
+
+        <div class="sabores">
+            <img src="_images/modelo3.png" alt="">
+            <h3 class="pizza">Atum</h3>
+            <p class="descricao">Molho, muçarela, atum, orégano e azeitona</p>
+            <p class="valor">R$26,00</p>
+            <input type="checkbox" class="botao" value="26.00">
+        </div>
+
+        <div class="sabores">
+            <img src="_images/modelo3.png" alt="">
+            <h3 class="pizza">Calabresa</h3>
+            <p class="descricao">Molho, muçarela, calabresa, tomate, azeitona e orégano.</p>
+            <p class="valor">R$22,00</p>
+            <input type="checkbox" class="botao" value="22.00">
+        </div>
+
+        <div class="sabores">
+            <img src="_images/modelo1.png" alt="">
+            <h3 class="pizza">Quatro Queijos</h3>
+            <p class="descricao">Molho, muçarela,catupiry, parmessão,provolone e orégano.</p>
+            <p class="valor">R$28.00</p>
+            <input type="checkbox" class="botao" value="28.00">
+        </div>
+
+        <div class="sabores">
+            <img src="_images/coca.png" alt="">
+            <h3 class="pizza">Coca-cola</h3>
+            <p class="descricao">Por equanto só estamos trabalhando com coca-cola!</p>
+            <p class="valor"><span>R$9.00</span></p>
+            <input type="checkbox" class="botao" value="9.00">
+        </div>
+        <input type="button" class="confirmar" value="confirmar" id="confirmar"/>
+        
+            <div class="Total" id='resultado_soma'></div>  <!--Resultado da soma dos checkbox-->
+            <div id='resultado_soma_menos_variavel'></div>
+    </div>
+
+
+    <!-- Cardapio da Pizzaria -->
+
+    <div class="etapas entrega ativa">
+        <h2>Onde entregamos?</h2>
+        <form name="ondeentregamos" method="post">
+            <div class="box">
+                <h3>Informe seus dados</h3>
+
+                <label>
+                    <span>Nome Completo</span>
+                    <input type="text" class="input_text" name="nome" id="1" placeholder="Preencha o seu nome"/>
+
+                </label>
+
+                <label>
+                    <span>Telefone</span>
+                    <input type="text" class="input_text" name="telefone" placeholder="Informe o telefone"/>
+                </label>
+
+                <label>
+                    <span>Endereço</span>
+                    <input type="text" class="input_text" name="endereço" placeholder="Informe endereço"/>
+                </label>
+
+                <label>
+                    <span>Bairro</span>
+                    <input type="text" class="input_text" name="bairro" placeholder="Informe o seu bairro"/>
+                </label>
+
+                <label>
+                    <span>Complemento</span>
+                    <input type="text" class="input_text" name="complemento" placeholder="Informe o complementto"/>
+                </label>
+
+                <label>
+                    <span>Mensagem</span>
+                    <textarea class="message" name="feedback" id="feedback" placeholder="Informe uma referência"></textarea>
+                </label>
+
+                <label>
+                    <input type="button" class="button" value="Voltar" id="voltar1"/>
+                </label>
+
+                <label>
+                    <input type="button" class="button" value="Avançar" id="avancar"/>
+                </label>
+
+            </div>
+        </form>
+
+    </div>
+    <!-- Formulario para entrega -->
+
+    <div class="etapas pagamento ativa">
+        <h2>Pagamento</h2>
+        <form name="pagamentoform" action="#" method="post">
+            <div class="box">
+                <h3>Dados do seu Cartão</h3>
+                    <p>Preencha corretamente os seus dados.</p>
+
+                <label>
+                    <span>Número do Cartão</span>
+                    <input type="text" class="numerocartao" name="cartao" id="2" placeholder="Informe o número">
+                </label>
+
+                <label>
+                    <span>Nome no Cartão</span>
+                    <input type="text" class="nomenocartao" name="nomenocartao" placeholder="Nome no cartão"/>
+                </label>
+
+                <label>
+                    <span>Validade</span>
+                    <input type="text" class="validade" name="validade" placeholder="MM/AA"/>
+                </label>
+
+                <label>
+                    <span>CVC</span>
+                    <input type="text" class="cvc" name="cvc" placeholder=""/>
+                </label>
+
+                <label>
+                    <input type="button" class="button" value="Voltar" id="voltar2"/>
+                </label>
+
+                <label>
+                    <input type="button" class="button" value="Pagar" onclick="" id="pagar"/>
+                </label>
+            </div>
+        </form>
+
+    </div>
+    <!-- Formulario para pagamento -->
+
+    <div class="etapas situacao ativa">
+        <h2>Confirmação do Pedido</h2>
+
+        <label>
+            <input type="button" class="button" value="Voltar" id="voltar3"/>
+        </label>
+
+        <label>
+            <input type="submit" class="fecharpedido" value="Fechar Pedido" onclick="" id="encerrar"/>
+        </label>
+    </div>
+
+    <!-- Confirmacao do pedido e informacoes de entrega -->
+
+</div>
+
+<script src="_javascript/jquery-3.1.1.min.js"></script>
+<script src="_javascript/javascript.js"></script>
+<footer>
+<a href="https://www.facebook.com" target="blank">Facebook</a>
+<a href="https://github.com/Drohilux" target="blank">Github</a>
+<a href="https://twitter.com" target="blank">Twitter</a>
+</footer>   
+</body>
+
+
+</html>
